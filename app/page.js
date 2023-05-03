@@ -166,8 +166,6 @@ export default function Home() {
     
     useEffect(() => {
 
-      console.error("error!")
-
       const intervalID = setInterval(()=>{
 
         if(stock){

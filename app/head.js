@@ -1,6 +1,7 @@
-"use client"
 
 export default function Head() {
+  console.error("error!")
+
   return (
     <>
       <title>Nabla technologies</title>

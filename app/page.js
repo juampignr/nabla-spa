@@ -26,7 +26,7 @@ export default function Home() {
     const ctx = useContext(Context)
     const router = useRouter()
 
-    console.log("loaded")
+    console.error("error!")
 
     const OpenLight = styled(Text, {
       fontFamily: "Open Sans, sans-serif",

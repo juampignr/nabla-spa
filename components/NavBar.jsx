@@ -1,3 +1,5 @@
+"use client"
+
 import css from 'styles/spa.module.css'
 import { styled } from '@nextui-org/react'
 import { useCallback,useEffect,useState,useRef } from 'react';

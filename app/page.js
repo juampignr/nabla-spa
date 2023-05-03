@@ -21,13 +21,13 @@ const openSans = Open_Sans({ subsets: ['latin'], width:100, weight:"variable" })
 
 const inter = Inter({ subsets: ['latin'], axes: ['slnt']})
 
-
 export default function Home() {
 
     const ctx = useContext(Context)
     const router = useRouter()
 
-    
+    console.log("loaded")
+
     const OpenLight = styled(Text, {
       fontFamily: "Open Sans, sans-serif",
                   fontWeight: 300,
@@ -166,6 +166,8 @@ export default function Home() {
       }}
     
     useEffect(() => {
+
+      console.log("loaded")
 
       const intervalID = setInterval(()=>{
 

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../react/React-and-React-Native-4th-Edition"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../test"
+		},
+		{
+			"path": "../Dewey/dewey"
+		}
+	],
+	"settings": {}
+}

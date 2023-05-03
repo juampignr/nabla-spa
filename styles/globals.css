@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+html {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+body {
+  margin: unset !important;
+}
+
+.appearLeft{
+  display: block;
+  animation: fadeIn;
+  animation-duration: .5s;
+ 
+}
+
+.appearRight{
+  display: block;
+  animation: fadeIn;
+  animation-duration: .5s;
+ 
+}
+
+.hideDown{
+  display: block;
+  animation: slideOutDown;
+  animation-duration: .75s;
+ 
+}
+
+.showUp{
+  display: block;
+  animation: slideInUp;
+  animation-duration: .75s;
+ 
+}
+
+.imHere{
+  display: block;
+  animation: rubberBand;
+  animation-duration: .5s;
+ 
+}
+
+.invisible{
+  display: none !important;
+}
+
+.visible{
+  display: flex !important;
+}

@@ -4,6 +4,9 @@ import "styles/globals.css"
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { CssBaseline } from "@nextui-org/react";
 import { createContext,useState } from "react";
+import { Analytics } from '@vercel/analytics/react'
+
+
 
 export const Context = createContext();
 
@@ -25,6 +28,7 @@ export default function Layout({ children }) {
       <Context.Provider value={{status:status,setStatus:setStatus,shared:{}}}> 
         <body>
           {children}  
+          <Analytics/> 
         </body>
       </Context.Provider>
     </html>

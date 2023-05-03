@@ -2,7 +2,7 @@
 
 import css from 'styles/spa.module.css'
 import { styled } from '@nextui-org/react'
-import { useCallback,useEffect,useState,useRef } from 'react';
+import { useEffect,useState,useRef } from 'react';
 
 export default function NavBar({children,hideShowPercentage = 5, position = "bottom", type = "fixed"}){
     

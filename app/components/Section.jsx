@@ -3,7 +3,6 @@
 import css from 'styles/spa.module.css'
 import PropTypes from "prop-types";
 import { Grid } from '@nextui-org/react';
-import { Center } from 'components/Grid'
 import { Context } from 'app/layout';
 import { useEffect,useState,useContext,useRef } from 'react';
 

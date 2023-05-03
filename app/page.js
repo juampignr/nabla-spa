@@ -6,8 +6,8 @@ import shirtImg from 'images/shirt.png'
 import shoesImg from 'images/shoes.png'
 import logo from 'images/nablaLogoWhite.png'
 import css from 'styles/spa.module.css'
-import Section from 'app/Section'
-import NavBar from 'app/NavBar'
+import Section from 'components/Section'
+import NavBar from 'components/NavBar'
 import { Context } from 'app/_app'
 import { useContext,useEffect,useState } from 'react'
 import { Josefin_Sans,Josefin_Slab,Open_Sans,Inter } from '@next/font/google'
@@ -26,7 +26,6 @@ export default function Home() {
     const ctx = useContext(Context)
     const router = useRouter()
 
-    console.error("error!")
 
     const OpenLight = styled(Text, {
       fontFamily: "Open Sans, sans-serif",
@@ -167,7 +166,7 @@ export default function Home() {
     
     useEffect(() => {
 
-      console.log("loaded")
+      console.error("error!")
 
       const intervalID = setInterval(()=>{
 

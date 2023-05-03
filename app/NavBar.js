@@ -17,14 +17,14 @@ export default function NavBar({children,hideShowPercentage = 5, position = "bot
         ...navPosition
     });
 
-    let threshold = window.innerHeight*(hideShowPercentage/100)
-
     const [className, setClassName] = useState("visible") 
 
     let navRef = useRef()
     let lastScrollY = useRef(0)
 
     useEffect(() => {
+
+        let threshold = window.innerHeight*(hideShowPercentage/100)
 
         if(navType == "fixed"){
 

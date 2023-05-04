@@ -26,7 +26,6 @@ export default function Home() {
     const ctx = useContext(Context)
     const router = useRouter()
 
-
     const OpenLight = styled(Text, {
       fontFamily: "Open Sans, sans-serif",
                   fontWeight: 300,
@@ -197,6 +196,7 @@ export default function Home() {
     
     useEffect(() => {
 
+      console.log(ctx)
       ctx.setStatus({status:"error",error:new Error("this is a test error")})
 
       setShirtStock({

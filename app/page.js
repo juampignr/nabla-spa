@@ -516,7 +516,7 @@ export default function Home() {
               ||
               <><OpenBold size={32} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleTextGradient }} span>
 
-                Also, it's of no good use use without knowing how to direct your customers to it.
+                Also, it's of no good use without knowing how to direct your customers to it.
                 
               </OpenBold>
               <OpenXBold size={34} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleFocusTextGradient }} span> 

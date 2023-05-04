@@ -131,7 +131,7 @@ export default function Home() {
       sectionTwo:{
 
         "normal":{
-          backgroundColor:"linear-gradient(170deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
+          backgroundColor:"linear-gradient(189deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
           titleTextGradient:"315deg, rgba(171,169,169,1) 0%, rgba(241,251,255,1) 60%",
           titleFocusTextGradient:"315deg, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%",
           buttonGradientBackground:"linear-gradient(rgb(0, 176, 255) 0%, rgb(0, 176, 255) 100%)",
@@ -161,7 +161,7 @@ export default function Home() {
       sectionFour:{
 
         "normal":{
-          backgroundColor:"linear-gradient(170deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
+          backgroundColor:"linear-gradient(189deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
         },
         "special":{
           backgroundColor:"linear-gradient(315deg, rgba(0, 176, 255,.8) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",

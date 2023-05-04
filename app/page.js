@@ -131,7 +131,7 @@ export default function Home() {
       sectionTwo:{
 
         "normal":{
-          backgroundColor:"linear-gradient(225deg, rgba(0, 176, 255,.8) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
+          backgroundColor:"linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
           titleTextGradient:"315deg, rgba(171,169,169,1) 0%, rgba(241,251,255,1) 60%",
           titleFocusTextGradient:"315deg, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%",
           buttonGradientBackground:"linear-gradient(rgb(0, 176, 255) 0%, rgb(0, 176, 255) 100%)",
@@ -149,10 +149,11 @@ export default function Home() {
       sectionThree:{
 
         "normal":{
-          backgroundColor:"linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
+          backgroundColor:"linear-gradient(170deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
           cardBorderRadius: 5
         },
         "special":{
+          backgroundColor:"linear-gradient(225deg, rgba(0, 176, 255,.8) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
           cardBorderRadius: 30
         },
       
@@ -160,7 +161,7 @@ export default function Home() {
       sectionFour:{
 
         "normal":{
-          backgroundColor:"linear-gradient(225deg, rgba(0, 176, 255,.8) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
+          backgroundColor:"linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
         },
         "special":{
           backgroundColor:"linear-gradient(315deg, rgba(0, 176, 255,.8) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
@@ -367,9 +368,9 @@ export default function Home() {
         <div style={{position:"relative",right: "-5vw"}}>
 
           <Card css={special == "special" && 
-          { backgroundColor:"rgb(156 156 156)",width:"90vw", height:"50vh", borderRadius:30}
+          { backgroundColor:"rgb(156 156 156)",width:"90vw", height:"40vh", borderRadius:30}
           ||
-          { backgroundColor:"rgb(156 156 156)",width:"90vw", height:"50vh",borderRadius:5}
+          { backgroundColor:"rgb(156 156 156)",width:"90vw", height:"40vh",borderRadius:5}
           }>
 
           <Grid.Container>
@@ -515,7 +516,7 @@ export default function Home() {
               ||
               <><OpenBold size={32} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleTextGradient }} span>
 
-                Also, it's of no good use without knowing how to direct your customers to it.
+                Also, it's of no good use use without knowing how to direct your customers to it.
                 
               </OpenBold>
               <OpenXBold size={34} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleFocusTextGradient }} span> 

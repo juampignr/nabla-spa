@@ -10,7 +10,7 @@ export const Context = createContext();
 function App({ Component,pageProps }) {
   
   const [status,setStatus] = useState({status:"loaded"})
-  
+
   const log = (status) => { 
     
     const lineno = status.error.stack.split(">")[1].slice(1)
@@ -61,11 +61,11 @@ function App({ Component,pageProps }) {
       }}
     >
       <NextUIProvider>
-          <Context.Provider value={{status:status,setStatus:setStatus,shared:{}}}>
             <Layout>
-              <Component {...pageProps}/>
+              <Context.Provider value={{status:status,setStatus:setStatus,shared:{}}}>
+                <Component {...pageProps}/>
+              </Context.Provider>
             </Layout>
-            </Context.Provider>
         </NextUIProvider>
 
     </ThemesProvider>

@@ -21,6 +21,7 @@ const openSans = Open_Sans({ subsets: ['latin'], width:100, weight:"variable" })
 
 const inter = Inter({ subsets: ['latin'], axes: ['slnt']})
 
+
 export default function Home() {
 
     const ctx = useContext(Context)
@@ -195,9 +196,6 @@ export default function Home() {
   
     
     useEffect(() => {
-
-      console.log(ctx)
-      ctx.setStatus({status:"error",error:new Error("this is a test error")})
 
       setShirtStock({
 

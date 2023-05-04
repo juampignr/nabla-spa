@@ -81,7 +81,7 @@ export default function Home() {
     <OpenXBold size={20} transform="full-width" css={{color:"white"}}>I'm interested, tell me more!</OpenXBold>
     )
     const [missConversionNode,setMissCoversionNode] = useState(
-      <OpenBold size={20} transform="full-width" css={{color:"white"}}>I'm a bore, get me out of here.</OpenBold>
+      <OpenBold size={20} transform="full-width" css={{color:"white"}}>I'm a bore, get me out of here</OpenBold>
     )
 
     const [stock,setStock] = useState(20)
@@ -114,7 +114,8 @@ export default function Home() {
       sectionOne:{
 
         "normal":{
-          backgroundColor:"linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
+
+          backgroundColor:"linear-gradient(180deg,rgba(255,253,255,.50),rgba(255,255,255,0))",
           backgroundImage: jobsImg,
           navBackgroundColor: "rgb(123 123 123 / 90%)"
 
@@ -130,7 +131,7 @@ export default function Home() {
       sectionTwo:{
 
         "normal":{
-          backgroundColor:"linear-gradient(180deg,rgba(255,253,255,.50),rgba(255,255,255,0))",
+          backgroundColor:"linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
           titleTextGradient:"315deg, rgba(171,169,169,1) 0%, rgba(241,251,255,1) 60%",
           titleFocusTextGradient:"315deg, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%",
           buttonGradientBackground:"linear-gradient(rgb(0, 176, 255) 0%, rgb(0, 176, 255) 100%)",
@@ -160,7 +161,7 @@ export default function Home() {
       sectionFour:{
 
         "normal":{
-          backgroundColor:"linear-gradient(180deg,rgba(255,253,255,.50),rgba(255,255,255,0))",
+          backgroundColor:"linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 59%, rgba(201,201,201,1) 100%)",
         },
         "special":{
           backgroundColor:"linear-gradient(315deg, rgba(0, 176, 255,.8) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
@@ -367,9 +368,9 @@ export default function Home() {
         <div style={{position:"relative",right: "-5vw"}}>
 
           <Card css={special == "special" && 
-          { backgroundColor:"rgb(156 156 156)",width:"90vw", height:"45vh", borderRadius:30}
+          { backgroundColor:"rgb(156 156 156)",width:"90vw", height:"40vh", borderRadius:30}
           ||
-          { backgroundColor:"rgb(156 156 156)",width:"90vw", height:"45vh",borderRadius:5}
+          { backgroundColor:"rgb(156 156 156)",width:"90vw", height:"40vh",borderRadius:5}
           }>
 
           <Grid.Container>

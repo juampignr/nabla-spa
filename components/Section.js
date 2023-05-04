@@ -61,6 +61,8 @@ export default function Section({children,backgroundImage,backgroundColor,showUp
             section.childNodes.forEach((node)=> node.classList.add('invisible'))
         })
 
+        return () => ctx.setStatus({status:"warn",error:new Error("Section unmounted for some strange reason")});
+
     }, []);
 
     const isImage = typeof backgroundImage == "object"

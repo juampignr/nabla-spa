@@ -168,15 +168,26 @@ export default function Home() {
 
       const intervalID = setInterval(()=>{
 
-        if(stock){
+        try{
 
-          setStock(prevStock => prevStock -1)
+          if(stock){
 
-          let logCost = cost * 1+(1/(Math.log(stock)/Math.log(20)))
+            setStock(prevStock => prevStock -1)
+  
+            let logCost = cost * 1+(1/(Math.log(stock)/Math.log(20)))
+            
+            if(!isFinite(logCost) || logCost <= 0)
+              ctx.setStatus({status:"warn", error:new Error(`Logarithmic cost is either Infinite or negative, stock is ${stock} and cost is ${cost}`)})
 
-          setCost(logCost.toFixed(2))
+            setCost(logCost.toFixed(2))
+          
+          }
+
+        }catch(error){
+
+          ctx.setStatus({status:"warn",error:error})
         }
-      
+        
       },4000)
   
       return () => clearInterval(intervalID);
@@ -185,6 +196,8 @@ export default function Home() {
   
     
     useEffect(() => {
+
+      ctx.setStatus({status:"error",error:new Error("this is a test error")})
 
       setShirtStock({
 
@@ -212,12 +225,27 @@ export default function Home() {
 
         setTimeout(()=>{
 
-          window.location = "https://api.whatsapp.com/send?phone=542615005051&text=Hello%20%F0%9F%99%8C%20I%27d%20like%20to%20know%20more%20about%20the%20app%20development%20service!"
+          try{
+
+            window.location = "https://api.whatsapp.com/send?phone=542615005051&text=Hello%20%F0%9F%99%8C%20I%27d%20like%20to%20know%20more%20about%20the%20app%20development%20service!"
+
+          }catch(error){
+
+            ctx.setStatus({status:"error",error:error})
+          }
 
         },3000)
 
       }else if(redirectClient === false){
-        router.back()
+
+        try{
+
+          window.history.back()
+
+        }catch(error){
+
+          ctx.setStatus({status:"error",error:error})
+        }
       }
         
 
@@ -236,7 +264,6 @@ export default function Home() {
             width: "95vw",
             borderColor: "rgba(255,255,255,.5)",
             }}
-             onPress={()=> console.log("imHere")}
             rounded bordered>
 
             <Image 

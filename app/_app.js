@@ -9,7 +9,23 @@ export const Context = createContext();
 
 function App({ Component,pageProps }) {
   
-  const [status,setStatus] = useState("loaded")
+  const [status,setStatus] = useState({status:"loaded"})
+  
+  const log = (status) => { 
+    
+    const lineno = status.error.stack.split(">")[1].slice(1)
+    
+    try{
+
+      console[status.status](`Nabla SPA [${status.status}] @ ${lineno}: ${status.error.message}`)
+
+    }catch(error){
+
+      console[status.status](`Nabla SPA [${status.status}] @ ${lineno}: ${status.error.message}`)
+
+    }
+
+  }
 
   const lightTheme = createTheme({
     type: 'light',
@@ -28,10 +44,9 @@ function App({ Component,pageProps }) {
 
   useEffect(() => {
 
-    if(status.indexOf("error") != -1){
+    if(status.status == "error" || status.status == "warn"){
 
-      console.log(status)
-      //If dev do something, if prod do another thing
+      log(status)
 
     }
   },[status])

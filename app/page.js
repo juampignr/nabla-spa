@@ -81,7 +81,7 @@ export default function Home() {
     <OpenXBold size={20} transform="full-width" css={{color:"white"}}>I'm interested, tell me more!</OpenXBold>
     )
     const [missConversionNode,setMissCoversionNode] = useState(
-      <OpenBold size={20} transform="full-width" css={{color:"white"}}>I'm a bore, get me out of here</OpenBold>
+      <OpenBold size={20} transform="full-width" css={{color:"white"}}>I'm a bore, get me out of here.</OpenBold>
     )
 
     const [stock,setStock] = useState(20)
@@ -504,7 +504,7 @@ export default function Home() {
           {special == "special" && 
               <><JosefinBold size={36} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleTextGradient }} span>
 
-                Also, it's of no good use use without knowing how to direct your customers to it.
+                Also, it's of no good use without knowing how to direct your customers to it.
                 
               </JosefinBold>
               <JosefinXBold size={38} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleFocusTextGradient }} span> 
@@ -516,7 +516,7 @@ export default function Home() {
               ||
               <><OpenBold size={32} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleTextGradient }} span>
 
-                Also, it's of no good use use without knowing how to direct your customers to it.
+                Also, it's of no good use without knowing how to direct your customers to it.
                 
               </OpenBold>
               <OpenXBold size={34} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleFocusTextGradient }} span> 

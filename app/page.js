@@ -27,7 +27,7 @@ export default function Home() {
     /* 
     Please check whats happening with context!
     */
-   
+
     const ctx = useContext(Context)
     const router = useRouter()
 
@@ -242,8 +242,8 @@ export default function Home() {
 
         try{
 
-          window.history.back()
-
+          setTimeout(()=>{ window.history.back() },3000)
+          
         }catch(error){
 
           ctx.setStatus({status:"error",error:error})

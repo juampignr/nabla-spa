@@ -24,6 +24,10 @@ const inter = Inter({ subsets: ['latin'], axes: ['slnt']})
 
 export default function Home() {
 
+    /* 
+    Please check whats happening with context!
+    */
+   
     const ctx = useContext(Context)
     const router = useRouter()
 

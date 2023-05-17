@@ -298,7 +298,7 @@ export default function Home() {
             }}
             onClick={()=> setSpecial("special")}
             >
-                <OpenXBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>I want to sell more</OpenXBold>
+                <OpenXBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{special == "special" && "Scroll down!" || "I want to sell more"}</OpenXBold>
             </Button>
 
             <Button css={{
@@ -320,7 +320,7 @@ export default function Home() {
             onClick={()=> setSpecial("normal")}
             autoFocus>
 
-              <OpenBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>I'm afraid, sorry</OpenBold>
+              <OpenBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{special == "special" && "Scroll down!" || "I'm afraid, sorry"}</OpenBold>
 
             </Button>
         </Button.Group>

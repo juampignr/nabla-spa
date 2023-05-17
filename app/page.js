@@ -303,7 +303,7 @@ export default function Home() {
               setIntention("special")
             }}
             >
-                <OpenXBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{intention == "special" && "Scroll down!" || "I want to sell more"}</OpenXBold>
+                <OpenXBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{intention == "special" && "Scroll down ▼" || "I want to sell more"}</OpenXBold>
             </Button>
 
             <Button css={{
@@ -328,7 +328,7 @@ export default function Home() {
             }}
             autoFocus>
 
-              <OpenBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{intention == "normal" && "Scroll down!" || "I'm afraid, sorry"}</OpenBold>
+              <OpenBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{intention == "normal" && "Scroll down ▼" || "I'm afraid, sorry"}</OpenBold>
 
             </Button>
         </Button.Group>

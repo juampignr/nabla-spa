@@ -72,6 +72,8 @@ export default function Home() {
     })
 
     const [special,setSpecial] = useState("normal")
+    const [intention,setIntention] = useState("")
+
     const [filter,setFilter] = useState("")
     const [redirectClient,setRedirectClient] = useState("")
 
@@ -296,9 +298,12 @@ export default function Home() {
                 borderColor: "white"
               }
             }}
-            onClick={()=> setSpecial("special")}
+            onClick={()=> {
+              setSpecial("special")
+              setIntention("special")
+            }}
             >
-                <OpenXBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{special == "normal" && "Scroll down!" || "I want to sell more"}</OpenXBold>
+                <OpenXBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{intention == "special" && "Scroll down!" || "I want to sell more"}</OpenXBold>
             </Button>
 
             <Button css={{
@@ -317,10 +322,13 @@ export default function Home() {
               },
               
             }}
-            onClick={()=> setSpecial("normal")}
+            onClick={()=> {
+              setSpecial("normal")
+              setIntention("normal")
+            }}
             autoFocus>
 
-              <OpenBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{special == "special" && "Scroll down!" || "I'm afraid, sorry"}</OpenBold>
+              <OpenBold size={20} color="white" transform="full-width" css={{lineHeight:"2rem"}}>{intention == "normal" && "Scroll down!" || "I'm afraid, sorry"}</OpenBold>
 
             </Button>
         </Button.Group>

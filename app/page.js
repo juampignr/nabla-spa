@@ -176,6 +176,8 @@ export default function Home() {
 
         try{
 
+          setIntention("")
+          
           if(stock){
 
             setStock(prevStock => prevStock -1)

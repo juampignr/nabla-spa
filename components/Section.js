@@ -40,7 +40,7 @@ function _handleIntersection(entries) {
 export default function Section(children){
 
     //{children,backgroundImage,backgroundColor,showUpTo,columns}
-    const {children,backgroundImage,backgroundColor,showUpTo,columns} = children
+    const {backgroundImage,backgroundColor,showUpTo,columns} = children
 
     const ctx = useContext(Context)
     

@@ -339,9 +339,7 @@ export default function Home() {
         <Section showUpTo="all" backgroundImage={theme["sectionOne"][special].backgroundImage} backgroundColor={theme["sectionOne"][special].backgroundColor}/>        
 
         <Section showUpTo="all" backgroundColor={theme["sectionTwo"][special].backgroundColor}>
-
-        <div style={{top:"10vw", marginBottom: "10vh"}}>
-          
+    
           {special == "special" && 
             <><JosefinBold size={36} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleTextGradient }} span>
 
@@ -368,15 +366,12 @@ export default function Home() {
             </OpenXBold>
             </>
           }
-          
-        </div>
-        
-        <div style={{position:"relative",right: "-5vw"}}>
+                  
 
           <Card css={special == "special" && 
-          { backgroundColor:"rgb(156 156 156)",maxWidth:"90%", borderRadius:30}
+          { backgroundColor:"rgb(156 156 156)",maxWidth:"80%", borderRadius:30}
           ||
-          { backgroundColor:"rgb(156 156 156)",maxWidth:"90%",borderRadius:5}
+          { backgroundColor:"rgb(156 156 156)",maxWidth:"80%",borderRadius:5}
           }>
 
           <Grid.Container>
@@ -499,8 +494,7 @@ export default function Home() {
 
           </Grid.Container>
           </Card>
-          </div>
-        
+
         </Section>
 
         <Section backgroundColor={theme["sectionThree"][special].backgroundColor}>

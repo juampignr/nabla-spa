@@ -593,7 +593,7 @@ export default function Home() {
           {special == "special" && 
               <><JosefinBold size={40} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleTextGradient }} span>
 
-                By having a well designed app, sells could increase up to 200%.
+                By having a well designed app, sales could increase up to 200%.
                 
               </JosefinBold>
               <JosefinXBold size={42} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleFocusTextGradient }} span> 
@@ -605,7 +605,7 @@ export default function Home() {
               ||
               <><OpenBold size={34} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleTextGradient }} span>
 
-                By having a well designed app, sells could increase up to 200%.
+                By having a well designed app, sales could increase up to 200%.
                 
               </OpenBold>
               <OpenXBold size={36} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleFocusTextGradient }} span> 

@@ -85,8 +85,8 @@ export default function Section(props){
   
 
     return(
-        <Grid.Container id={sectionID} className={`${css.section} observed`} gap={1} css={{padding:"5vw",...filling}} justify="space-between"> 
-            {childNodes.map(child=> <Grid {...deviceGrid[showUpTo]}>{child}</Grid>)} 
+        <Grid.Container id={sectionID} className={`${css.section} observed`} gap={1} css={{padding:"5vw",...filling}}> 
+            {childNodes.map(child=> <Grid justify="space-even" {...deviceGrid[showUpTo]}>{child}</Grid>)} 
         </Grid.Container> 
         );
 }

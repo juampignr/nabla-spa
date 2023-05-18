@@ -530,7 +530,7 @@ export default function Home() {
         
         </div>
 
-        <Card css={{ backgroundColor:"rgb(156 156 156)", maxWidth:"500px", height:"450px", borderRadius:theme["sectionThree"][special].cardBorderRadius}}>
+        <Card css={{ backgroundColor:"rgb(156 156 156)", maxWidth:"500px", height:"450px", alignItems: "center", borderRadius:theme["sectionThree"][special].cardBorderRadius}}>
 
           <Grid.Container>
           <Grid xs={12} sm={12} md={12} lg={12} xl={12} css={{justifyContent:"center"}}>

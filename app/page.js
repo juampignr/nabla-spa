@@ -498,9 +498,9 @@ export default function Home() {
 
         </Section>
 
-        <Section backgroundColor={theme["sectionThree"][special].backgroundColor}>
+        <Section showUpTo="all" backgroundColor={theme["sectionThree"][special].backgroundColor}>
 
-        <div style={{position:"relative",top:"10vw", right: "-5vw", width:"70vw", marginBottom: "10vh", textAlign:"right"}}>
+        <div style={{textAlign:"right"}}>
           
           {special == "special" && 
               <><JosefinBold size={36} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleTextGradient }} span>
@@ -530,13 +530,10 @@ export default function Home() {
         
         </div>
 
-        <div style={{position:"relative",left: "-5vw"}}>
+        <Card css={{ backgroundColor:"rgb(156 156 156)", maxWidth:"500px", height:"fit-content", borderRadius:theme["sectionThree"][special].cardBorderRadius}}>
 
-          <Card css={{ backgroundColor:"rgb(156 156 156)",width:"90vw", height:"fit-content", borderRadius:theme["sectionThree"][special].cardBorderRadius}}>
-
-            <Grid.Container>
-
-            <Grid xs={12} sm={12} md={12} lg={12} xl={12} css={{justifyContent:"center"}}>
+          <Grid.Container>
+          <Grid xs={12} sm={12} md={12} lg={12} xl={12} css={{justifyContent:"center"}}>
 
             <Card.Header css={{width:"90%", textAlign:"center", justifyContent:"center"}}>
             {special == "special" && 
@@ -583,15 +580,15 @@ export default function Home() {
             }
             
             </Grid>
-
             </Grid.Container>
+
           </Card>
-        </div>
+
         </Section>
 
-        <Section backgroundColor={theme["sectionFour"][special].backgroundColor}>
+        <Section showUpTo="all" backgroundColor={theme["sectionFour"][special].backgroundColor}>
 
-        <div style={{position:"relative",top:"5vh", width:"70vw"}}>
+        <div>
           
           {special == "special" && 
               <><JosefinBold size={40} transform="full-width" css={{ textGradient: theme["sectionTwo"][special].titleTextGradient }} span>
@@ -621,69 +618,69 @@ export default function Home() {
 
         </div>
 
-          <Button.Group size="xl" vertical bordered>
-            <Button css={{
+        <Button.Group size="xl" vertical bordered>
+          <Button css={{
 
-              background: "#00b0fff2",
+            background: "#00b0fff2",
+            color: "white",
+            borderColor: "transparent",
+            '&:hover': {
+              background: "linear-gradient(315deg, rgb(0, 176, 255) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
               color: "white",
-              borderColor: "transparent",
-              '&:hover': {
-                background: "linear-gradient(315deg, rgb(0, 176, 255) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
-                color: "white",
-                borderColor: "white"
-              }
-            }}
-            
-            onClick={()=>{
+              borderColor: "white"
+            }
+          }}
+          
+          onClick={()=>{
 
-              setCoversionNode(
-              <>
-                <Loading type="spinner" color="currentColor" size="lg" css={{margin:"1rem !important"}} />
-                <OpenXBold size={20} transform="full-width" css={{color:"white"}}> Opening WhatsApp</OpenXBold>
-              </>
-              )
+            setCoversionNode(
+            <>
+              <Loading type="spinner" color="currentColor" size="lg" css={{margin:"1rem !important"}} />
+              <OpenXBold size={20} transform="full-width" css={{color:"white"}}> Opening WhatsApp</OpenXBold>
+            </>
+            )
+            
+            setRedirectClient(true)
+
+          }}>
+
+              {conversionNode}
               
-              setRedirectClient(true)
+          </Button>
 
-            }}>
+          <Button css={{
 
-                {conversionNode}
-                
-            </Button>
-
-            <Button css={{
-
-              background: "#00b0fff2",
+            background: "#00b0fff2",
+            color: "white",
+            borderColor: "transparent",
+            '&:hover': {
+              background: "linear-gradient(315deg, rgb(0, 176, 255) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
               color: "white",
-              borderColor: "transparent",
-              '&:hover': {
-                background: "linear-gradient(315deg, rgb(0, 176, 255) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
-                color: "white",
-                borderColor: "white"
-              },
-              '&:focus': {
-                background: "linear-gradient(315deg, rgb(0, 176, 255) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
-                color: "white",
-                borderColor: "white"
-              }
-            }}
-            
-            onClick={()=>{
+              borderColor: "white"
+            },
+            '&:focus': {
+              background: "linear-gradient(315deg, rgb(0, 176, 255) 0%, rgb(234, 128, 252) 30%, rgb(237, 204, 155) 100%)",
+              color: "white",
+              borderColor: "white"
+            }
+          }}
+          
+          onClick={()=>{
 
-              setMissCoversionNode(<>
-                <OpenXBold size={20} transform="full-width" css={{color:"white"}}> Good luck, you'll need it</OpenXBold>          
-                <Loading type="points-opacity" color="currentColor" size="sm" css={{marginTop:"0.5rem !important",marginLeft:"0.25rem !important"}} />
-                </>
-              )
-              setRedirectClient(false)
-            }}>
+            setMissCoversionNode(<>
+              <OpenXBold size={20} transform="full-width" css={{color:"white"}}> Good luck, you'll need it</OpenXBold>          
+              <Loading type="points-opacity" color="currentColor" size="sm" css={{marginTop:"0.5rem !important",marginLeft:"0.25rem !important"}} />
+              </>
+            )
+            setRedirectClient(false)
+          }}>
 
-                {missConversionNode}
-                
-            </Button>
-          </Button.Group>
-        
-        </Section>
-        </>
+              {missConversionNode}
+              
+          </Button>
+        </Button.Group>
+      
+      </Section>
+      </>
     )
 }

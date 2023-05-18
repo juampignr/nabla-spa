@@ -267,7 +267,7 @@ export default function Home() {
             whiteSpace:"normal",
             padding: "2rem",
             margin: "auto",
-            maxWidth: "95vw",
+            width: "95vw",
             borderColor: "rgba(255,255,255,.5)",
             }}
             rounded bordered>

@@ -537,13 +537,13 @@ export default function Home() {
 
             <Card.Header css={{width:"90%", textAlign:"center", justifyContent:"center"}}>
             {special == "special" && 
-              <JosefinXBold size={35} transform="full-width" css={{ color: "white", fontStyle: "italic", margin:"unset"}}>
+              <JosefinXBold size={32} transform="full-width" css={{ color: "white", fontStyle: "italic", margin:"unset"}}>
 
                Even faster than inflation* 
  
               </JosefinXBold>
             ||
-              <OpenXBold size={35} transform="full-width" css={{ color: "white", fontStyle: "italic", margin:"unset"}}>
+              <OpenXBold size={32} transform="full-width" css={{ color: "white", fontStyle: "italic", margin:"unset"}}>
 
                New Nike Max Air! 
  

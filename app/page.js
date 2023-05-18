@@ -530,20 +530,20 @@ export default function Home() {
         
         </div>
 
-        <Card css={{ backgroundColor:"rgb(156 156 156)", maxWidth:"500px", height:"450px", borderRadius:theme["sectionThree"][special].cardBorderRadius}}>
+        <Card css={{ backgroundColor:"rgb(156 156 156)", maxWidth:"500px", borderRadius:theme["sectionThree"][special].cardBorderRadius}}>
 
-          <Grid.Container css={{alignItems: "center"}}>
+          <Grid.Container>
           <Grid xs={12} sm={12} md={12} lg={12} xl={12} css={{justifyContent:"center"}}>
 
             <Card.Header css={{width:"90%", textAlign:"center", justifyContent:"center"}}>
             {special == "special" && 
-              <JosefinXBold size={30} transform="full-width" css={{ color: "white", fontStyle: "italic", margin:"unset"}}>
+              <JosefinXBold size={35} transform="full-width" css={{ color: "white", fontStyle: "italic", margin:"unset"}}>
 
                Even faster than inflation* 
  
               </JosefinXBold>
             ||
-              <OpenXBold size={30} transform="full-width" css={{ color: "white", fontStyle: "italic", margin:"unset"}}>
+              <OpenXBold size={35} transform="full-width" css={{ color: "white", fontStyle: "italic", margin:"unset"}}>
 
                New Nike Max Air! 
  

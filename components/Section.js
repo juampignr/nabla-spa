@@ -37,8 +37,10 @@ function _handleIntersection(entries) {
     });
 }
 
-export default function Section({children,backgroundImage,backgroundColor,showUpTo,columns}){
+export default function Section(props){
 
+    //{children,backgroundImage,backgroundColor,showUpTo,columns}
+    console.log(Object.keys(props))
     const ctx = useContext(Context)
     
     const idArray = new Uint32Array(2)

@@ -260,14 +260,14 @@ export default function Home() {
 
     return(
         <>
-        <NavBar className={navAnimationClass} type="absolute" position="top">
+        <NavBar className={navAnimationClass} type="absolute" position="top" css={{maxWidth:"700px"}}>
           <Button css={{
             background: theme["sectionOne"][special].navBackgroundColor,
             color: "white",
             whiteSpace:"normal",
             padding: "2rem",
             margin: "auto",
-            maxWidth: "700px",
+            maxWidth: "95vw",
             borderColor: "rgba(255,255,255,.5)",
             }}
             rounded bordered>

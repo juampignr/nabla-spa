@@ -37,14 +37,15 @@ function _handleIntersection(entries) {
     });
 }
 
-export default function Section({children,backgroundImage,backgroundColor,showUpTo,columns}){
+export default function Section(props){
 
     
-    const childNodes = children ?? []
+    const childNodes = props.children ?? []
     
-    let backgroundColor = backgroundColor ?? "black"
-    let showUpTo = showUpTo ?? "all"
-    let column = columns ?? 1
+    const backgroundColor = props.backgroundColor ?? "black"
+    const backgroundImage = props.backgroundImage
+    const showUpTo = props.showUpTo ?? "all"
+    const column = props.columns ?? 1
 
     const ctx = useContext(Context)
     
@@ -78,7 +79,7 @@ export default function Section({children,backgroundImage,backgroundColor,showUp
     const tabletSize = column <= 2 ? 12/(column+1) : column
     const desktopSize = column <= 2 ? 12/(column+2) : 12/(column+1)
 
-    
+
     const filling = backgroundImage ? {backgroundImage:`${backgroundColor},url('${backgroundImage.src}')`} : {background:backgroundColor}
     
     const deviceGrid = {mobile:{xs:mobileSize,sm:0,md:0,lg:0,xl:0},

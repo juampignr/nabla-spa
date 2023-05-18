@@ -76,8 +76,9 @@ export default function Section(props){
     const isImage = typeof backgroundImage == "object"
 
     const mobileSize = 12/column
-    const tabletSize = column <= 2 ? 12/(column+1) : column
-    const desktopSize = column <= 2 ? 12/(column+2) : 12/(column+1)
+    const tabletSize = 12/(column+1) 
+    const desktopSize = 12/(column+2) 
+    const tvSize = 12/(column+3) 
 
 
     const filling = backgroundImage ? {backgroundImage:`${backgroundColor},url('${backgroundImage.src}')`} : {background:backgroundColor}
@@ -85,7 +86,7 @@ export default function Section(props){
     const deviceGrid = {mobile:{xs:mobileSize,sm:0,md:0,lg:0,xl:0},
         tablet:{xs:mobileSize,sm:tabletSize,md:0,lg:0,xl:0},
         desktop:{xs:mobileSize,sm:tabletSize,md:desktopSize,lg:desktopSize,xl:0},
-        all:{xs:mobileSize,sm:tabletSize,md:desktopSize,lg:desktopSize,xl:desktopSize}
+        all:{xs:mobileSize,sm:tabletSize,md:desktopSize,lg:desktopSize,xl:tvSize}
     } 
   
 

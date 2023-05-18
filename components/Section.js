@@ -78,6 +78,7 @@ export default function Section({children,backgroundImage,backgroundColor,showUp
     const tabletSize = column <= 2 ? 12/(column+1) : column
     const desktopSize = column <= 2 ? 12/(column+2) : 12/(column+1)
 
+    
     const filling = backgroundImage ? {backgroundImage:`${backgroundColor},url('${backgroundImage.src}')`} : {background:backgroundColor}
     
     const deviceGrid = {mobile:{xs:mobileSize,sm:0,md:0,lg:0,xl:0},

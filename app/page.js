@@ -177,7 +177,7 @@ export default function Home() {
         try{
 
           setIntention("")
-          
+
           if(stock){
 
             setStock(prevStock => prevStock -1)
@@ -336,13 +336,10 @@ export default function Home() {
         </Button.Group>
         </NavBar>
 
-        <Section backgroundImage={theme["sectionOne"][special].backgroundImage} backgroundColor={theme["sectionOne"][special].backgroundColor}>       
-            
-            
-            
+        <Section columns={2} showUpTo="all" backgroundImage={theme["sectionOne"][special].backgroundImage} backgroundColor={theme["sectionOne"][special].backgroundColor}>        
         </Section>
 
-        <Section backgroundColor={theme["sectionTwo"][special].backgroundColor}>
+        <Section columns={2} showUpTo="all" backgroundColor={theme["sectionTwo"][special].backgroundColor}>
           
         <div style={{position:"relative",top:"10vw", left: "-5vw", width:"70vw", marginBottom: "10vh"}}>
           

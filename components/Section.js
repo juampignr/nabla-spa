@@ -80,10 +80,13 @@ export default function Section({children,backgroundImage,backgroundColor,showUp
         desktop:{xs:mobileSize,sm:tabletSize,md:desktopSize,lg:desktopSize,xl:0},
         all:{xs:mobileSize,sm:tabletSize,md:desktopSize,lg:desktopSize,xl:desktopSize}
     } 
+  
 
-    const grid = column > 1 ? <Grid.Container id={sectionID} className="observed" gap={1} css={{padding:"5vw",...filling}} justify="space-evenly"> {children.map(child=> <Grid {...deviceGrid[showUpTo]}>{child}</Grid>)} </Grid.Container> : <div id={sectionID} className={`${css.section} observed`} style={filling}>{children}</div>   
-
-    return(<>{grid}</>);
+    return(
+        <Grid.Container id={sectionID} className={`${css.section} observed`} gap={1} css={{padding:"5vw",...filling}} justify="space-evenly"> 
+            {children.map(child=> <Grid {...deviceGrid[showUpTo]}>{child}</Grid>)} 
+        </Grid.Container> 
+        );
 }
 
 Section.propTypes = {

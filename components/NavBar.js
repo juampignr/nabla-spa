@@ -38,7 +38,7 @@ export default function NavBar({children,hideShowPercentage = 5, position = "bot
                     
                 }else if((lastScrollY.current-window.scrollY) > threshold){
         
-                    setClassName("fadeIn")
+                    setClassName("visible")
         
                     lastScrollY.current = window.scrollY;
                 }

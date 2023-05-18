@@ -37,10 +37,14 @@ function _handleIntersection(entries) {
     });
 }
 
-export default function Section(children){
+export default function Section({children,backgroundImage,backgroundColor,showUpTo,columns}){
 
-    //{children,backgroundImage,backgroundColor,showUpTo,columns}
-    const {backgroundImage,backgroundColor,showUpTo,columns} = children
+    
+    const childNodes = children ?? []
+    
+    let backgroundColor = backgroundColor ?? "black"
+    let showUpTo = showUpTo ?? "all"
+    let column = columns ?? 1
 
     const ctx = useContext(Context)
     
@@ -70,8 +74,6 @@ export default function Section(children){
 
     const isImage = typeof backgroundImage == "object"
 
-    const column = columns ?? 1
-
     const mobileSize = 12/column
     const tabletSize = column <= 2 ? 12/(column+1) : column
     const desktopSize = column <= 2 ? 12/(column+2) : 12/(column+1)
@@ -87,13 +89,12 @@ export default function Section(children){
 
     return(
         <Grid.Container id={sectionID} className={`${css.section} observed`} gap={1} css={{padding:"5vw",...filling}} justify="space-evenly"> 
-            {children.map(child=> <Grid {...deviceGrid[showUpTo]}>{child}</Grid>)} 
+            {childNodes.map(child=> <Grid {...deviceGrid[showUpTo]}>{child}</Grid>)} 
         </Grid.Container> 
         );
 }
 
 Section.propTypes = {
-    children: PropTypes.array.isRequired,
     backgroundColor: PropTypes.string.isRequired,
     backgroundImage: PropTypes.oneOf([PropTypes.string,PropTypes.object]),
     columns: PropTypes.number,

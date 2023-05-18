@@ -370,9 +370,9 @@ export default function Home() {
           </div>
 
           <Card css={special == "special" && 
-          { backgroundColor:"rgb(156 156 156)",maxWidth:"600px", borderRadius:30}
+          { backgroundColor:"rgb(156 156 156)",maxWidth:"500px", borderRadius:30}
           ||
-          { backgroundColor:"rgb(156 156 156)",maxWidth:"600px",borderRadius:5}
+          { backgroundColor:"rgb(156 156 156)",maxWidth:"500px",borderRadius:5}
           }>
 
           <Grid.Container>

@@ -40,7 +40,8 @@ function _handleIntersection(entries) {
 export default function Section(children){
 
     //{children,backgroundImage,backgroundColor,showUpTo,columns}
-    console.log(children)
+    const {children,backgroundImage,backgroundColor,showUpTo,columns} = children
+
     const ctx = useContext(Context)
     
     const idArray = new Uint32Array(2)

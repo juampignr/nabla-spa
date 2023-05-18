@@ -336,10 +336,10 @@ export default function Home() {
         </Button.Group>
         </NavBar>
 
-        <Section columns={2} showUpTo="all" backgroundImage={theme["sectionOne"][special].backgroundImage} backgroundColor={theme["sectionOne"][special].backgroundColor}>        
+        <Section columns={3} showUpTo="all" backgroundImage={theme["sectionOne"][special].backgroundImage} backgroundColor={theme["sectionOne"][special].backgroundColor}>        
         </Section>
 
-        <Section columns={2} showUpTo="all" backgroundColor={theme["sectionTwo"][special].backgroundColor}>
+        <Section columns={3} showUpTo="all" backgroundColor={theme["sectionTwo"][special].backgroundColor}>
           
         <div style={{position:"relative",top:"10vw", left: "-5vw", width:"70vw", marginBottom: "10vh"}}>
           

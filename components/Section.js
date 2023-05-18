@@ -37,7 +37,7 @@ function _handleIntersection(entries) {
     });
 }
 
-export default function Section({children}){
+export default function Section(children){
 
     //{children,backgroundImage,backgroundColor,showUpTo,columns}
     console.log(children)

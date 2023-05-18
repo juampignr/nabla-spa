@@ -14,14 +14,7 @@ body {
   margin: unset !important;
 }
 
-.appearLeft{
-  display: block;
-  animation: fadeIn;
-  animation-duration: .5s;
- 
-}
-
-.appearRight{
+.fadeIn{
   display: block;
   animation: fadeIn;
   animation-duration: .5s;

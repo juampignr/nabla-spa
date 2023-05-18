@@ -19,12 +19,7 @@ function _handleIntersection(entries) {
             
             node.classList.remove('invisible')
 
-            if(index%2){
-
-                node.classList.add('appearRight')
-            }else{
-                node.classList.add('appearLeft')
-            }
+            node.classList.add('fadeIn')
                 
             node.focus()
             index++

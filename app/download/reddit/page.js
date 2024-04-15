@@ -8,7 +8,7 @@ export default function RedirectPage() {
 
   useEffect(() => {
     setTimeout(() => {
-      router.push("https://mega.nz/folder/ka52DbCY#N_bd9peiLSH4BjSMpvMugQ")
+      router.push("/mega")
     }, 5000); // Redirect after 5 seconds
   }, []);
 

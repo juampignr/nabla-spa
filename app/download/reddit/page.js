@@ -3,11 +3,12 @@
 import { useEffect } from 'react';
 import { Text, styled } from '@nextui-org/react'
 
-export default function RedirectPage() {
+export default function redirectPage() {
 
   const JosefinMedium = styled(Text, {
     fontFamily: "Josefin Sans, sans-serif",
-                fontWeight: 500,
+    fontWeight: 500,
+    marginLeft:"1rem"
   })
 
   useEffect(() => {
@@ -16,5 +17,5 @@ export default function RedirectPage() {
     }, 5000); // Redirect after 5 seconds
   }, []);
 
-  return <JosefinMedium>You are being redirected...</JosefinMedium>;
+  return <JosefinMedium>⌛ You are being redirected to your download ⌛</JosefinMedium>;
 }

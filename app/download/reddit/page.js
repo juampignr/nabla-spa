@@ -1,10 +1,14 @@
 "use client"
 
 import { useEffect } from 'react';
-import { useRouter } from 'next/navigation'
+import { Text, styled } from '@nextui-org/react'
 
 export default function RedirectPage() {
-  const router = useRouter();
+
+  const JosefinMedium = styled(Text, {
+    fontFamily: "Josefin Sans, sans-serif",
+                fontWeight: 500,
+  })
 
   useEffect(() => {
     setTimeout(() => {
@@ -12,5 +16,5 @@ export default function RedirectPage() {
     }, 5000); // Redirect after 5 seconds
   }, []);
 
-  return <p>You are being redirected...</p>;
+  return <JosefinMedium>You are being redirected...</JosefinMedium>;
 }

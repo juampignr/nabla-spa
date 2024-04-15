@@ -17,5 +17,5 @@ export default function redirectPage() {
     }, 5000); // Redirect after 5 seconds
   }, []);
 
-  return <JosefinMedium>⌛ You are being redirected to your download ⌛</JosefinMedium>;
+  return <JosefinMedium size={12}>⌛ You are being redirected to your download ⌛</JosefinMedium>;
 }

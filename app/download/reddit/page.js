@@ -14,8 +14,8 @@ export default function redirectPage() {
   useEffect(() => {
     setTimeout(() => {
       window.location.href = 'https://mega.nz/folder/ka52DbCY#N_bd9peiLSH4BjSMpvMugQ';
-    }, 5000); // Redirect after 5 seconds
+    }, 5000)
   }, []);
 
-  return <JosefinMedium size={12}>⌛ You are being redirected to your download ⌛</JosefinMedium>;
+  return <JosefinMedium size={20}>⌛ You are being redirected to your download ⌛</JosefinMedium>;
 }

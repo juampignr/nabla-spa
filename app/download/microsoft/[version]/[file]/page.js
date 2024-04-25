@@ -10,7 +10,7 @@ export default function redirectPage({params}) {
 
   let version = params?.version ?? "latest" 
   let url = `https://github.com/juampignr/employee_releases/releases/download/v${version}/EmployeeXInstall.exe`
-  
+    
   const versionRegex = /^\d{1}\.\d{1}\.\d{1}$/g
 
   const JosefinMedium = styled(Text, {

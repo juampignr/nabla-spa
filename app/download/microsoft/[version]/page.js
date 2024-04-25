@@ -8,8 +8,11 @@ import { useRouter } from 'next/router';
 export default function redirectPage({params}) {
 
 
-  console.log(params)
+  let version = params?.version ?? "latest" 
+  let url = `https://github.com/juampignr/employee_releases/releases/download/v${version}/EmployeeXInstall.exe`
   
+  const versionRegex = /^\d{1}\.\d{1}\.\d{1}$/g
+
   const JosefinMedium = styled(Text, {
     fontFamily: "Josefin Sans, sans-serif",
     fontWeight: 500,
@@ -17,9 +20,16 @@ export default function redirectPage({params}) {
   })
 
   useEffect(() => {
+    
+    if(!versionRegex.test(version))
+      url = `https://github.com/juampignr/employee_releases/releases/latest`     
+    
+    
     setTimeout(() => {
-      window.location.href = 'https://mega.nz/folder/ka52DbCY#N_bd9peiLSH4BjSMpvMugQ';
-    }, 5000)
+
+      window.location.href = url;
+    }, 3000)
+
   }, []);
 
   return <JosefinMedium size={20}>⌛ You are being redirected to your download ⌛</JosefinMedium>;

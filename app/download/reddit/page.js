@@ -17,5 +17,5 @@ export default function redirectPage() {
     }, 5000)
   }, []);
 
-  return <JosefinMedium size={20}>⌛ You are being redirected to your download ⌛</JosefinMedium>;
+  return <JosefinMedium size={20}>⌛ You are being redirected to the store ⌛</JosefinMedium>;
 }

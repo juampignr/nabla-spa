@@ -13,7 +13,7 @@ export default function redirectPage() {
 
   useEffect(() => {
     setTimeout(() => {
-      window.location.href = 'https://mega.nz/folder/ka52DbCY#N_bd9peiLSH4BjSMpvMugQ';
+      window.location.href = "https://employee-x.en.uptodown.com/windows";
     }, 5000)
   }, []);
 

@@ -34,7 +34,7 @@ function _handleIntersection(entries) {
 export default function Section(props){
 
     
-    const childNodes = props.children ?? []
+    const childNodes = Array.isArray(props?.children) ? props.children : [props?.children]
     
     const backgroundColor = props.backgroundColor ?? "black"
     const backgroundImage = props.backgroundImage

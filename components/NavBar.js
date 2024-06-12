@@ -51,8 +51,6 @@ export default function NavBar({children,hideShowPercentage = 5, position = "bot
             };
         }
         
-        return () => ctx.setStatus({status:"warn",error:new Error("NavBar unmounted for some strange reason")});
-
     },[]);
 
 
